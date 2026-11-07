@@ -120,6 +120,8 @@ button { color: inherit; font: inherit; }
 .process-grid { display: grid; grid-template-columns: repeat(4,1fr); overflow: hidden; border: 1px solid var(--line); border-radius: 8px; }
 .process-grid article { min-height: 215px; padding: 21px; background: #fffdf9; border-right: 1px solid var(--line); }
 .process-grid article:last-child { border-right: 0; }
+.process-grid .enhancement-card { position: relative; padding-bottom: 48px; }
+.process-grid .enhancement-charge { position: absolute; right: 21px; bottom: 21px; }
 .process-grid h3 { margin: 36px 0 9px; font: 27px/1 var(--display); }
 .process-grid p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.65; }
 .faq-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 8vw; }
@@ -245,4 +247,3 @@ button { color: inherit; font: inherit; }
   .social-links { grid-column: 1 / -1; grid-row: 3; gap: 17px; }
   .back-top { grid-column: 2; grid-row: 1; font-size: 9px; }
 }
-

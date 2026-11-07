@@ -1,108 +1,148 @@
 /*
   EDIT YOUR PORTFOLIO HERE
   Add a project by copying an object into reels or longForm.
-  Copy the MP4 into assets/ and update its video path.
+  Paste your YouTube link (Shorts, watch URL, or youtu.be link) into the video field.
   featured: true puts it among the first three Home highlights.
   Reorder featured items to choose which three show first.
+  You can add 30, 40, or more videos — the responsive grid will automatically adjust!
 */
 /*
-  Videos assets/ folder mein hain.
-  featured: true wale pehle 3 edits Home page par dikhte hain.
+  =========================================================================
+  YOUTUBE VIDEOS KAISE ADD KAREIN (HOW TO ADD YOUTUBE VIDEOS):
+  1. Niche 'reels' ya 'longForm' list mein apna YouTube link 'video' ke andar paste karein.
+     - Share link:  "https://youtu.be/XXXXXXXXXXX"
+     - Shorts link: "https://www.youtube.com/shorts/XXXXXXXXXXX"
+     - Normal link: "https://www.youtube.com/watch?v=XXXXXXXXXXX"
+  2. Thumbnail अपने आप (automatically) YouTube se aa jayega! Agar apna alag custom
+     thumbnail lagana ho, tabhi 'image' mein link ya path dalein, warna 'image: ""' chhod dein.
+  3. Future mein 30-40 ya kitni bhi nayi videos add karni ho, bas ek block { ... },
+     copy karke niche paste kar dein. Grid bilkul responsive aur flexible hai,
+     apne aap nayi rows bana lega bina kisi problem ke.
+  =========================================================================
 */
 
+// ==================== REEL SECTION VIDEOS START ====================
 const reels = [
+  // Ye first video ha reel section ki (Reel Video #1)
   {
-    title: "Rider",
-    detail: "Short-form edit · 0:22",
+    title: "Brain Motion Graphic",
+    detail: "Short-form edit · 0:06",
     image: "",
-    video: "assets/rider.mp4",
+    video: "https://youtu.be/L9J4w91ek8U", // <-- Yahan apni 1st Reel/Shorts ka YouTube URL dalein
     featured: true,
     colors: ["#e0c6a4", "#b78a62", "#302e2c"]
   },
+
+  // Ye second video ha reel section ki (Reel Video #2)
   {
-    title: "Edited Clip · 10 Oct",
+    title: "Color Grading",
     detail: "Short-form edit · 0:15",
     image: "",
-    video: "assets/video_2026-10-10_14-57-39.mp4",
+    video: "https://youtu.be/ZWf629DsbCE", // <-- Yahan apni 2nd Reel/Shorts ka YouTube URL dalein
     featured: true,
     colors: ["#dcd8f4", "#9589ef", "#f1d46a"]
   }
-];
 
+  // Future me nayi Reel video add krne ke liye upar wale { ... } block ko copy krke yahan niche paste krein (pichle block ke baad comma ',' zaroor lagayein). Chahe 30-40 videos dalein, sab automatically set ho jayega.
+];
+// ==================== REEL SECTION VIDEOS END ====================
+
+
+// ==================== LONG FORM SECTION VIDEOS START ====================
 const longForm = [
+  // Ye first video ha long form section ki (Long Form Video #1)
   {
     title: "1st Edit",
-    detail: "Long-form edit · 0:52",
+    detail: "Hostinger Intro · 1:23",
     image: "",
-    video: "assets/1st edit.mp4",
+    video: "https://youtu.be/lZsYWin-fDE", // <-- Yahan apni 1st Long Form YouTube video ka URL dalein
     featured: true,
     colors: ["#e4c17a", "#f3d9a5", "#b95949"]
   },
+
+  // Ye second video ha long form section ki (Long Form Video #2)
   {
-    title: "Color Grading",
-    detail: "Color study · 0:06",
+    title: "15 day Series",
+    detail: "Color study · 0:27",
     image: "",
-    video: "assets/color grading.mp4",
+    video: "https://youtu.be/rQCsmWOBoa8", // <-- Yahan apni 2nd Long Form YouTube video ka URL dalein
     featured: true,
     colors: ["#dcd8f4", "#9589ef", "#f1d46a"]
   },
+
+  // Ye third video ha long form section ki (Long Form Video #3)
   {
     title: "InVideo Intro",
     detail: "Intro edit · 1:22",
     image: "",
-    video: "assets/InVideo-Intro-raw.mp4",
+    video: "https://youtu.be/BpFL3ZHAqEA", // <-- Yahan apni 3rd Long Form YouTube video ka URL dalein
     featured: true,
     colors: ["#efd19b", "#c18b52", "#3a3130"]
   },
+
+  // Ye fourth video ha long form section ki (Long Form Video #4)
   {
     title: "Chess Piece Queen",
     detail: "Visual edit · 0:09",
     image: "",
-    video: "assets/chess_piece_queen.mp4",
+    video: "https://youtu.be/L9J4w91ek8U", // <-- Yahan apni 4th Long Form YouTube video ka URL dalein
     featured: false,
     colors: ["#e1e9d4", "#96ad86", "#eee2c9"]
   },
+
+  // Ye fifth video ha long form section ki (Long Form Video #5)
   {
     title: "Comp 1_2",
     detail: "Compositing · 0:04",
     image: "",
-    video: "assets/Comp 1_2.mp4",
+    video: "https://youtu.be/ZWf629DsbCE", // <-- Yahan apni 5th Long Form YouTube video ka URL dalein
     featured: false,
     colors: ["#edc57a", "#ca7544", "#3e3031"]
   },
+
+  // Ye sixth video ha long form section ki (Long Form Video #6)
   {
     title: "Comp 2",
     detail: "Compositing · 0:03",
     image: "",
-    video: "assets/Comp 2.mp4",
+    video: "https://youtu.be/BpFL3ZHAqEA", // <-- Yahan apni 6th Long Form YouTube video ka URL dalein
     featured: false,
     colors: ["#d9dfc3", "#93ad93", "#343d37"]
   },
+
+  // Ye seventh video ha long form section ki (Long Form Video #7)
   {
     title: "Brain Animation with Cubes",
     detail: "3D motion · 0:07",
     image: "",
-    video: "assets/final brain aniamtion with cubes.mp4",
+    video: "https://youtu.be/L9J4w91ek8U", // <-- Yahan apni 7th Long Form YouTube video ka URL dalein
     featured: false,
     colors: ["#adb9e8", "#59638f", "#26273f"]
   },
+
+  // Ye eighth video ha long form section ki (Long Form Video #8)
   {
     title: "Gems",
     detail: "Motion study · 0:12",
     image: "",
-    video: "assets/gems_1.mp4",
+    video: "https://youtu.be/ZWf629DsbCE", // <-- Yahan apni 8th Long Form YouTube video ka URL dalein
     featured: false,
     colors: ["#d7c7ed", "#ad84cf", "#393047"]
   },
+
+  // Ye ninth video ha long form section ki (Long Form Video #9)
   {
     title: "Rain Dead",
     detail: "Visual edit · 0:08",
     image: "",
-    video: "assets/rain dead.mp4",
+    video: "https://youtu.be/BpFL3ZHAqEA", // <-- Yahan apni 9th Long Form YouTube video ka URL dalein
     featured: false,
     colors: ["#bacbd0", "#718893", "#27353d"]
   }
+
+  // Future me 30-40 ya aur videos add krne ke liye upar wale { ... } block ko copy krke yahan niche paste krte jayein (har block ke beech comma ',' lagana na bhoolein). Code poori tarah responsive aur flexible hai!
 ];
+// ==================== LONG FORM SECTION VIDEOS END ====================
 
 const faqItems = [
   {
@@ -131,19 +171,224 @@ const faqItems = [
   }
 ];
 
-// Play button ko video ke exact center mein rakho.
-const centerPlayStyle = document.createElement("style");
-centerPlayStyle.textContent = `
+// Helper function: Kisi bhi YouTube URL (watch, shorts, embed, youtu.be) ya direct ID se 11-character YouTube Video ID nikalta hai.
+function getYouTubeId(url) {
+  if (!url || typeof url !== "string") return null;
+  const trimmed = url.trim();
+  const regExp = /(?:youtube(?:-nocookie)?\.com\/(?:[^/\n\s]+\/\S+\/|(?:v|e(?:mbed)?|shorts|live)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+  const match = trimmed.match(regExp);
+  if (match && match[1]) return match[1];
+  if (/^[a-zA-Z0-9_-]{11}$/.test(trimmed)) return trimmed;
+  return null;
+}
+
+// Custom Clean Player & Card Styling (Zero YouTube Logo, Zero Title, Full Custom Controls)
+const customPlayerStyle = document.createElement("style");
+customPlayerStyle.textContent = `
+  .project-poster { cursor: pointer; position: relative; }
   .project-poster > .play-button {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin: 0 !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 5;
   }
   .project-poster > .play-button:hover {
-    transform: translate(-50%, -50%) scale(1.08);
+    transform: translate(-50%, -50%) scale(1.08) !important;
+  }
+  .project-image {
+    transition: transform .35s ease;
+  }
+  .project-card:hover .project-image {
+    transform: scale(1.03);
+  }
+
+  /* Custom Clean Video Shell inside Dialog */
+  .video-dialog.is-portrait-video {
+    width: min(420px, 92vw);
+  }
+  .clean-yt-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    max-height: 72vh;
+    background: #000;
+    border-radius: 6px;
+    overflow: hidden;
+    user-select: none;
+  }
+  .video-dialog.is-portrait-video .clean-yt-wrapper {
+    aspect-ratio: 9 / 16;
+    max-height: 76vh;
+  }
+
+  /* Oversized cropped viewport so YouTube's top title bar & bottom watermark are pushed outside the frame */
+  .clean-yt-viewport {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none; /* Prevents direct click on YouTube iframe */
+  }
+  .clean-yt-viewport iframe,
+  .clean-yt-viewport > div {
+    position: absolute !important;
+    top: -65px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: calc(100% + 130px) !important;
+    border: 0 !important;
+    pointer-events: none !important;
+  }
+
+  /* Click-to-play/pause surface + solid black cover when paused so YouTube's "More videos" never shows */
+  .clean-yt-surface {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transition: background .18s ease;
+  }
+  .clean-yt-wrapper.is-paused .clean-yt-surface {
+    background: #0d0d0c;
+  }
+  .clean-yt-pause-poster {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease;
+    filter: brightness(0.65);
+  }
+  .clean-yt-wrapper.is-paused .clean-yt-pause-poster {
+    opacity: 1;
+  }
+  .clean-yt-center-icon {
+    position: relative;
+    z-index: 2;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(23, 23, 20, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    padding-left: 3px;
+    opacity: 0;
+    transform: scale(0.85);
+    transition: opacity .18s ease, transform .18s ease, background .18s ease;
+    pointer-events: none;
+  }
+  .clean-yt-wrapper.is-paused .clean-yt-center-icon {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .clean-yt-surface:hover .clean-yt-center-icon {
+    background: #ff704f;
+  }
+
+  /* Clean Custom Control Bar (Play/Pause, Seekbar, Time, Mute/Volume, Fullscreen) */
+  .clean-yt-controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 14px 11px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.35) 68%, transparent);
+    color: #fff;
+    font: 500 11px/1 "DM Sans", sans-serif;
+  }
+  .clean-yt-btn {
+    border: 0;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 6px;
+    font-size: 13px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.92;
+    transition: opacity .15s, color .15s;
+  }
+  .clean-yt-btn:hover {
+    opacity: 1;
+    color: #f1d84d;
+  }
+  .clean-yt-seek {
+    flex: 1;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 4px;
+    border-radius: 99px;
+    background: rgba(255, 255, 255, 0.28);
+    cursor: pointer;
+    outline: none;
+  }
+  .clean-yt-seek::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff704f;
+    cursor: pointer;
+    border: 2px solid #fff;
+  }
+  .clean-yt-seek::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff704f;
+    cursor: pointer;
+    border: 2px solid #fff;
+  }
+  .clean-yt-time {
+    font-variant-numeric: tabular-nums;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.88);
+    min-width: 68px;
+    text-align: center;
+  }
+  .clean-yt-vol {
+    width: 58px;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 4px;
+    border-radius: 99px;
+    background: rgba(255, 255, 255, 0.28);
+    cursor: pointer;
+    outline: none;
+  }
+  .clean-yt-vol::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+  @media (max-width: 520px) {
+    .clean-yt-vol { display: none; }
+    .clean-yt-controls { gap: 7px; padding: 10px; }
   }
 `;
-document.head.appendChild(centerPlayStyle);
+document.head.appendChild(customPlayerStyle);
 
 function cardMarkup(item, kind, index, gallery = false) {
   const [one, two, three] = item.colors || [
@@ -153,28 +398,41 @@ function cardMarkup(item, kind, index, gallery = false) {
   ];
 
   const isReel = kind === "reels";
+  const ytId = getYouTubeId(item.video);
+  const thumbUrl = item.image
+    ? encodeURI(item.image)
+    : ytId
+      ? `https://i.ytimg.com/vi/${ytId}/maxresdefault.jpg`
+      : "";
 
-  const art = item.video
-    ? `<video
-         class="project-video"
-         src="${encodeURI(item.video)}"
-         ${item.image ? `poster="${encodeURI(item.image)}"` : ""}
-         autoplay
-         loop
-         muted
-         playsinline
-         preload="metadata"
-         aria-label="${item.title} video preview"></video>`
-    : item.image
-      ? `<img
-           class="project-image"
-           src="${encodeURI(item.image)}"
-           alt="${item.title} video thumbnail"
-           loading="lazy">`
-      : `<span class="poster-orb" aria-hidden="true"></span>
-         <span class="poster-stripe" aria-hidden="true"></span>
-         <span class="poster-title">${item.title}</span>
-         <span class="poster-hint">ADD YOUR THUMBNAIL</span>`;
+  const art = ytId
+    ? `<img
+         class="project-image"
+         src="${thumbUrl}"
+         onerror="if(this.src.includes('maxresdefault')){this.src='https://i.ytimg.com/vi/${ytId}/hqdefault.jpg';}"
+         alt="${item.title} video thumbnail"
+         loading="lazy">`
+    : item.video
+      ? `<video
+           class="project-video"
+           src="${encodeURI(item.video)}"
+           ${item.image ? `poster="${encodeURI(item.image)}"` : ""}
+           autoplay
+           loop
+           muted
+           playsinline
+           preload="metadata"
+           aria-label="${item.title} video preview"></video>`
+      : item.image
+        ? `<img
+             class="project-image"
+             src="${encodeURI(item.image)}"
+             alt="${item.title} video thumbnail"
+             loading="lazy">`
+        : `<span class="poster-orb" aria-hidden="true"></span>
+           <span class="poster-stripe" aria-hidden="true"></span>
+           <span class="poster-title">${item.title}</span>
+           <span class="poster-hint">ADD YOUR YOUTUBE URL</span>`;
 
   return `
     <article
@@ -187,7 +445,11 @@ function cardMarkup(item, kind, index, gallery = false) {
         <span>${isReel ? "REEL" : "EDIT"}</span>
       </div>
 
-      <div class="project-poster ${isReel ? "portrait" : "landscape"}">
+      <div
+        class="project-poster ${isReel ? "portrait" : "landscape"}"
+        data-play-kind="${kind}"
+        data-play-index="${index}"
+        ${ytId ? `data-yt-id="${ytId}"` : ""}>
         ${art}
         <button
           class="play-button"
@@ -268,7 +530,7 @@ document.querySelectorAll("[data-year]").forEach(node => {
   node.textContent = new Date().getFullYear();
 });
 
-// Visible videos auto-play; off-screen videos pause to save resources.
+// Visible local videos auto-play; off-screen videos pause to save resources.
 if ("IntersectionObserver" in window) {
   const videoObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -322,59 +584,274 @@ document.addEventListener("keydown", event => {
   }
 });
 
+// Load YouTube IFrame Player API for 100% custom controls without YouTube UI
+let ytApiReadyPromise = null;
+function ensureYouTubeApi() {
+  if (window.YT && window.YT.Player) return Promise.resolve(window.YT);
+  if (ytApiReadyPromise) return ytApiReadyPromise;
+
+  ytApiReadyPromise = new Promise(resolve => {
+    const prev = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = () => {
+      if (typeof prev === "function") prev();
+      resolve(window.YT);
+    };
+    const tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.head.appendChild(tag);
+  });
+
+  return ytApiReadyPromise;
+}
+
+function formatTime(sec) {
+  if (!sec || isNaN(sec) || sec < 0) return "0:00";
+  const m = Math.floor(sec / 60);
+  const s = Math.floor(sec % 60);
+  return `${m}:${s < 10 ? "0" : ""}${s}`;
+}
+
 const dialog = document.querySelector("#video-dialog");
 
 if (dialog) {
   const player = dialog.querySelector("video");
   const caption = dialog.querySelector("p");
 
-  // Play icon ko video box ke exact centre mein rakho.
-  const centerStyle = document.createElement("style");
-  centerStyle.textContent = `
-    .project-poster { position: relative; }
-    .project-poster > .play-button {
-      position: absolute !important;
-      top: 50% !important;
-      left: 50% !important;
-      right: auto !important;
-      bottom: auto !important;
-      margin: 0 !important;
-      transform: translate(-50%, -50%) !important;
-      z-index: 5;
-    }
-    .project-poster > .play-button:hover {
-      transform: translate(-50%, -50%) scale(1.08) !important;
-    }
+  // Build Custom Clean Player UI (no YouTube chrome, no logo, no title, custom controls)
+  const cleanWrapper = document.createElement("div");
+  cleanWrapper.className = "clean-yt-wrapper";
+  cleanWrapper.style.display = "none";
+  cleanWrapper.innerHTML = `
+    <div class="clean-yt-viewport">
+      <div id="yt-api-mount"></div>
+    </div>
+    <div class="clean-yt-surface" aria-label="Play or pause video">
+      <img class="clean-yt-pause-poster" alt="" />
+      <div class="clean-yt-center-icon">▶</div>
+    </div>
+    <div class="clean-yt-controls">
+      <button type="button" class="clean-yt-btn" data-yt-toggle aria-label="Play or Pause">❚❚</button>
+      <input type="range" class="clean-yt-seek" min="0" max="100" step="0.1" value="0" aria-label="Seek timeline" />
+      <span class="clean-yt-time">0:00 / 0:00</span>
+      <button type="button" class="clean-yt-btn" data-yt-mute aria-label="Mute or Unmute">🔊</button>
+      <input type="range" class="clean-yt-vol" min="0" max="100" step="1" value="100" aria-label="Volume" />
+      <button type="button" class="clean-yt-btn" data-yt-fs aria-label="Fullscreen">⛶</button>
+    </div>
   `;
-  document.head.appendChild(centerStyle);
+  player.insertAdjacentElement("beforebegin", cleanWrapper);
 
-  // Video poster box mein kahin bhi click karne par sound ke saath kholo.
+  const surface = cleanWrapper.querySelector(".clean-yt-surface");
+  const pausePoster = cleanWrapper.querySelector(".clean-yt-pause-poster");
+  const toggleBtn = cleanWrapper.querySelector("[data-yt-toggle]");
+  const seekInput = cleanWrapper.querySelector(".clean-yt-seek");
+  const timeLabel = cleanWrapper.querySelector(".clean-yt-time");
+  const muteBtn = cleanWrapper.querySelector("[data-yt-mute]");
+  const volInput = cleanWrapper.querySelector(".clean-yt-vol");
+  const fsBtn = cleanWrapper.querySelector("[data-yt-fs]");
+
+  let ytPlayer = null;
+  let ytTimer = null;
+  let isSeeking = false;
+  let activeVideoId = null;
+
+  function startProgressLoop() {
+    stopProgressLoop();
+    ytTimer = setInterval(() => {
+      if (!ytPlayer || typeof ytPlayer.getCurrentTime !== "function" || isSeeking) return;
+      const cur = ytPlayer.getCurrentTime() || 0;
+      const dur = ytPlayer.getDuration() || 0;
+      if (dur > 0) {
+        seekInput.value = String((cur / dur) * 100);
+        timeLabel.textContent = `${formatTime(cur)} / ${formatTime(dur)}`;
+        // Loop smoothly just before the very end so YouTube end-screen never triggers
+        if (dur - cur <= 0.35) {
+          ytPlayer.seekTo(0, true);
+          ytPlayer.playVideo();
+        }
+      }
+    }, 200);
+  }
+
+  function stopProgressLoop() {
+    if (ytTimer) {
+      clearInterval(ytTimer);
+      ytTimer = null;
+    }
+  }
+
+  function togglePlayPause() {
+    if (!ytPlayer || typeof ytPlayer.getPlayerState !== "function") return;
+    const state = ytPlayer.getPlayerState();
+    if (state === 1) {
+      ytPlayer.pauseVideo();
+    } else {
+      ytPlayer.playVideo();
+    }
+  }
+
+  surface.addEventListener("click", togglePlayPause);
+  toggleBtn.addEventListener("click", togglePlayPause);
+
+  seekInput.addEventListener("input", () => {
+    isSeeking = true;
+    if (!ytPlayer || typeof ytPlayer.getDuration !== "function") return;
+    const dur = ytPlayer.getDuration() || 0;
+    const target = ( parseFloat(seekInput.value) / 100 ) * dur;
+    timeLabel.textContent = `${formatTime(target)} / ${formatTime(dur)}`;
+  });
+
+  seekInput.addEventListener("change", () => {
+    if (ytPlayer && typeof ytPlayer.getDuration === "function") {
+      const dur = ytPlayer.getDuration() || 0;
+      const target = ( parseFloat(seekInput.value) / 100 ) * dur;
+      ytPlayer.seekTo(target, true);
+    }
+    isSeeking = false;
+  });
+
+  muteBtn.addEventListener("click", () => {
+    if (!ytPlayer || typeof ytPlayer.isMuted !== "function") return;
+    if (ytPlayer.isMuted()) {
+      ytPlayer.unMute();
+      muteBtn.textContent = "🔊";
+      volInput.value = String(ytPlayer.getVolume() || 100);
+    } else {
+      ytPlayer.mute();
+      muteBtn.textContent = "🔇";
+      volInput.value = "0";
+    }
+  });
+
+  volInput.addEventListener("input", () => {
+    if (!ytPlayer || typeof ytPlayer.setVolume !== "function") return;
+    const v = parseInt(volInput.value, 10);
+    ytPlayer.setVolume(v);
+    if (v === 0) {
+      ytPlayer.mute();
+      muteBtn.textContent = "🔇";
+    } else {
+      if (ytPlayer.isMuted()) ytPlayer.unMute();
+      muteBtn.textContent = "🔊";
+    }
+  });
+
+  fsBtn.addEventListener("click", () => {
+    if (!document.fullscreenElement) {
+      cleanWrapper.requestFullscreen?.();
+    } else {
+      document.exitFullscreen?.();
+    }
+  });
+
+  async function openCleanYouTube(ytId, thumbSrc) {
+    activeVideoId = ytId;
+    pausePoster.src = thumbSrc || `https://i.ytimg.com/vi/${ytId}/hqdefault.jpg`;
+    cleanWrapper.classList.remove("is-paused");
+    toggleBtn.textContent = "❚❚";
+    seekInput.value = "0";
+    timeLabel.textContent = "0:00 / 0:00";
+
+    const YT = await ensureYouTubeApi();
+    if (activeVideoId !== ytId) return;
+
+    if (ytPlayer && typeof ytPlayer.loadVideoById === "function") {
+      ytPlayer.loadVideoById(ytId);
+      ytPlayer.unMute();
+      ytPlayer.setVolume(100);
+      muteBtn.textContent = "🔊";
+      volInput.value = "100";
+      startProgressLoop();
+      return;
+    }
+
+    ytPlayer = new YT.Player("yt-api-mount", {
+      videoId: ytId,
+      playerVars: {
+        autoplay: 1,
+        controls: 0,
+        disablekb: 1,
+        fs: 0,
+        iv_load_policy: 3,
+        modestbranding: 1,
+        playsinline: 1,
+        rel: 0
+      },
+      events: {
+        onReady: event => {
+          event.target.unMute();
+          event.target.setVolume(100);
+          event.target.playVideo();
+          muteBtn.textContent = "🔊";
+          volInput.value = "100";
+          startProgressLoop();
+        },
+        onStateChange: event => {
+          // 1 = PLAYING, 2 = PAUSED, 0 = ENDED
+          if (event.data === 1) {
+            cleanWrapper.classList.remove("is-paused");
+            toggleBtn.textContent = "❚❚";
+            startProgressLoop();
+          } else if (event.data === 2) {
+            cleanWrapper.classList.add("is-paused");
+            toggleBtn.textContent = "▶";
+          } else if (event.data === 0) {
+            event.target.seekTo(0, true);
+            event.target.playVideo();
+          }
+        }
+      }
+    });
+  }
+
+  // Video poster box mein kahin bhi click karne par clean custom player sound ke saath kholo.
   document.addEventListener("click", event => {
     const poster = event.target.closest(".project-poster");
     if (!poster) return;
 
+    const ytId = poster.dataset.ytId;
     const sourceVideo = poster.querySelector(".project-video");
-    if (!sourceVideo) return;
+    if (!ytId && !sourceVideo) return;
 
-    // Background mein chal rahe cards pause karo.
+    // Background mein chal rahe local cards pause karo.
     document.querySelectorAll(".project-video").forEach(video => {
       video.pause();
     });
 
-    player.src = sourceVideo.currentSrc || sourceVideo.src;
-    player.removeAttribute("muted");
-    player.muted = false;
-    player.defaultMuted = false;
-    player.volume = 1;
-    player.loop = true;
-    player.playsInline = true;
-    player.controls = true;
+    const isPortrait = poster.classList.contains("portrait");
+    dialog.classList.toggle("is-portrait-video", isPortrait);
 
     caption.textContent =
       poster.closest(".project-card")?.querySelector(".project-meta b")?.textContent || "";
 
-    dialog.showModal();
-    player.play().catch(() => {});
+    if (ytId) {
+      player.pause();
+      player.removeAttribute("src");
+      player.style.display = "none";
+
+      cleanWrapper.style.display = "block";
+      const thumbImg = poster.querySelector(".project-image")?.src || "";
+      dialog.showModal();
+      openCleanYouTube(ytId, thumbImg);
+    } else if (sourceVideo) {
+      stopProgressLoop();
+      if (ytPlayer && typeof ytPlayer.pauseVideo === "function") {
+        ytPlayer.pauseVideo();
+      }
+      cleanWrapper.style.display = "none";
+
+      player.style.display = "block";
+      player.src = sourceVideo.currentSrc || sourceVideo.src;
+      player.removeAttribute("muted");
+      player.muted = false;
+      player.defaultMuted = false;
+      player.volume = 1;
+      player.loop = true;
+      player.playsInline = true;
+      player.controls = true;
+
+      dialog.showModal();
+      player.play().catch(() => {});
+    }
   });
 
   dialog.querySelector(".dialog-close").addEventListener("click", () => {
@@ -386,9 +863,16 @@ if (dialog) {
   });
 
   dialog.addEventListener("close", () => {
+    activeVideoId = null;
+    stopProgressLoop();
+    if (ytPlayer && typeof ytPlayer.stopVideo === "function") {
+      ytPlayer.stopVideo();
+    }
+    cleanWrapper.style.display = "none";
     player.pause();
     player.removeAttribute("src");
     player.load();
+    dialog.classList.remove("is-portrait-video");
   });
 }
 
